@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style-reservation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="calendrier.js"></script>
+    <title>reservation</title>
+  </head>
+  <body>
+    <header>
+      <div id="search">
+        <div id="search-box">
+          <input type="text" id="search-bar">
+        </div>
+        <div id="search-icon">
+          <i class="material-icons">search</i>
+        </div>
+      </div>
+      <div id="onglet">
+        <a href="#">Connexion</a>
+        <a href="#">Inscription</a>
+        <a href="index.html">Accueil</a>
+      </div>
+    </header>
+    <main>
+      <form action="" method="get" class="form-example">
+        <div id="nom">
+          <label for="name">nom: </label>
+          <input type="text" name="name" id="lastname" required>
+        </div>
+        <div id="prenom">
+          <label for="name">prénom: </label>
+          <input type="text" name="name" value="firstname">
+        </div>
+        <div id="email">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="calendar">
+	<div class="header">
+		<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+		<div class="text" data-render="month-year"></div>
+		<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+	</div>
+	<div class="months" data-flow="left">
+		<div class="month month-a">
+			<div class="render render-a"></div>
+		</div>
+		<div class="month month-b">
+			<div class="render render-b"></div>
+		</div>
+	</div>
+</div>
+<div id="button">
+  <button type="button" name="button">Envoyer</button>
+</div>
+      </form>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
